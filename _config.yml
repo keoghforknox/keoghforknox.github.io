@@ -13,6 +13,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jakekeogh.com" # the base hostname & protocol for your site
 repository: keoghforknox/keoghforknox.github.io
 
+google-analytics: UA-81725763-1
+
 candidate: Jake Keogh
 party:
 division: Knox
