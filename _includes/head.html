@@ -34,7 +34,7 @@
   <meta property="og:image:height" content="{% if page.og.image.location %}{{ page.og.image.height }}{% else %}{{ site.og.image.height }}{% endif %}">
   <meta property="og:locale" content="{% if page.og.locale %}{{ page.og.locale }}{% elsif site.og.locale %}{{ site.og.locale }}{% else %}en_GB{% endif %}">
   <meta property="og:title" content="{% if page.og.title %}{{ page.og.title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.og.description %}{{ page.og.description | strip_html | strip_newlines | truncate: 300 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+  <meta property="og:description" content="{% if page.og.description %}{{ page.og.description | strip_html | strip_newlines | truncate: 300 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 300 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
   {% include google-analytics.html %}{% if page.head %}
   {{ page.head }}{% endif %}{% if page.url == '/index.html' %}
   {% include ownership.html %}{% endif %}
