@@ -4,6 +4,11 @@
 </div>
 
 <footer class="c-footer">
+<div class="c-footer__social-links">
+  {% for link in site.data.social-media %}
+  {% if link.enabled == true %}<a href="{{ link.url }}" title="{{ link.title }}"><i class="{{ link.icon-class }}"></i></a>{% endif %}
+  {% endfor %}
+</div>
 
 <div class="c-footer__disclaimer">
   <span>{{ site.authorisation }}.</span>

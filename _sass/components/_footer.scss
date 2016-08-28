@@ -29,6 +29,20 @@ $disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed
   }
 }
 
+.c-footer__social-links {
+  background-color: $brand-primary;
+  color: white;
+  font-size: 200%;
+  padding: 1rem;
+  text-align: center;
+
+  a {
+    color: white;
+    margin: 0 .2em;
+  }
+}
+
+
 .c-footer__signup {
   background-color: $brand-primary;
   color: white;

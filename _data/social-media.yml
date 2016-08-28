@@ -1,0 +1,20 @@
+- name: Facebook
+  url: https://facebook.com/jakekeogh
+  title: facebook.com/jakekeogh
+  icon-class: fa fa-facebook-official
+  enabled: true
+- name: Instagram
+  url: https://instagram.com/keoghforknox
+  title: instagram.com/keoghforknox
+  icon-class: fa fa-instagram
+  enabled: true
+- name: Twitter
+  url: https://twitter.com/keoghforknox
+  title: twitter.com/keoghforknox
+  icon-class: fa fa-twitter
+  enabled: true
+- name: YouTube
+  url: https://youtube.com/
+  title: youtube.com/
+  icon-class: fa fa-youtube
+  enabled: false
