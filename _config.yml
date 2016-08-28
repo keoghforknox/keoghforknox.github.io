@@ -29,6 +29,7 @@ og:
     location: "/images/OpenGraph-201608282303.jpg"
     width: 2452
     height: 1287
+  locale: en_GB
 
 # Build settings
 markdown: kramdown
