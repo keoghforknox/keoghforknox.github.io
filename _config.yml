@@ -8,7 +8,7 @@
 # Site settings
 title: Jake Keogh for Knox
 description: > # this means to ignore newlines until "baseurl:"
-  Jake Keogh for Knox
+  The official website for Jake Keogh for Knox, candidate for Dobson Ward
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jakekeogh.com.au" # the base hostname & protocol for your site
 repository: keoghforknox/keoghforknox.github.io
@@ -23,6 +23,12 @@ collections:
   releases:
     output: true
     permalink: /media/release/:name:output_ext
+
+og:
+  image:
+    location: "/images/OpenGraph-201608282303.jpg"
+    width: 2452
+    height: 1287
 
 # Build settings
 markdown: kramdown
