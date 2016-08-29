@@ -7,6 +7,7 @@
 
 # Site settings
 title: Jake Keogh for Knox
+shorttitle: Jake Keogh
 description: > # this means to ignore newlines until "baseurl:"
   The official website for Jake Keogh for Knox, candidate for Dobson Ward
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,6 +33,11 @@ og:
     width: 2452
     height: 1287
   locale: en_GB
+
+colours:
+  primary: '#91255F'
+  secondary: '#60193F'
+
 
 # Build settings
 markdown: kramdown
