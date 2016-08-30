@@ -38,6 +38,8 @@ colours:
   primary: '#91255F'
   secondary: '#60193F'
 
+favicon-version: '?v=2016083017727'
+
 
 # Build settings
 markdown: kramdown
