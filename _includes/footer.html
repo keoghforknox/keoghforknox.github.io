@@ -1,6 +1,11 @@
 <div class="c-footer__signup">
+  {% unless page.petition %}
   <h2>Get updates from Jake:</h2>
-  {% unless page.petition %}{% include mailchimp-generic.html %}{% else %}{% include petitions/mailchimp-{{ page.petition }}.html %}{% endunless %}
+  {% include mailchimp-generic.html inputclass='c-form--primary' %}
+  {% else %}
+  <h2>Sign the petition:</h2>
+  {% include petitions/mailchimp-{{ page.petition }}.html inputclass='c-form--primary' %}
+  {% endunless %}
 </div>
 
 <footer class="c-footer">

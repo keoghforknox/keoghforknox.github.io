@@ -1,24 +1,18 @@
 ---
 layout: page
 title: Policies
-permalink: /policies/
-navbar: true
+permalink: /policies.html
 ---
+<h1 class="page-heading">Policies</h1>
 
-<div class="home">
+<ul class="c-policy__list">
+  {% for policy in site.policies %}
+    <li>
+      <span class="c-policy__meta">{{ policy.date | date: "%b %-d, %Y" }}</span>
 
-  <h1 class="page-heading">Policies</h1>
-
-  <ul class="post-list">
-    {% for policy in site.policies %}
-      <li>
-        <span class="post-meta">{{ policy.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ policy.url | prepend: site.baseurl }}">{{ policy.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+      <h2>
+        <a class="c-policy__link" href="{{ policy.url | prepend: site.baseurl }}">{{ policy.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

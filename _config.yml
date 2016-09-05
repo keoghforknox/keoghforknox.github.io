@@ -26,6 +26,9 @@ collections:
   releases:
     output: true
     permalink: /media/release/:name:output_ext
+  policies:
+    output: true
+    permalink: /policies/:name:output_ext
 
 og:
   image:

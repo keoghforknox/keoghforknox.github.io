@@ -1,8 +1,8 @@
 - title: About Jake
   url: '/'
-# - title: Policies
-#   url: '/policies/'
-# - title: Media
-#   url: '/media/'
+- title: Policies
+  url: '/policies/'
+- title: Media
+  url: '/media/'
 - title: Contact
   url: '/contact.html'

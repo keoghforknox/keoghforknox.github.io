@@ -1,6 +1,160 @@
 // ==========================================================================
 // PATCHES FOR BOOTSTRAP FORMS
 // ==========================================================================
+$input-width: 12em;
+$input-space: 0.2em;
+
 .form-control {
   margin: 1rem 0;
+}
+
+.c-form__inner-title {
+  display: block;
+  // font-size: 110%;
+  font-weight: bold;
+}
+
+// .c-form--primary {
+//   background-color: $brand-primary;
+//   color: lighten($brand-primary, 50%);
+//   padding: 1rem;
+
+//   .form-group {
+//     margin: 0;
+//   }
+
+//   .btn-primary {
+//     background-color: $brand-secondary;
+//     // border-color: $brand-secondary;
+//     border: none;
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       background-color: lighten($brand-secondary, 20%);
+//       // border-color: lighten($brand-secondary, 20%);
+//       border: none;
+//     }
+//   }
+
+//   input {
+//     background-color: lighten($brand-primary, 5%);
+//     border-color: darken($brand-primary, 2%);
+//     // color: lighten($brand-primary, 10%);
+
+//     &:focus,
+//     &:active {
+//       border-color: $brand-secondary;
+//     }
+
+//   }
+//   @include placeholder (darken($brand-primary, 10%));
+
+//   // &::-webkit-input-placeholder {
+//   //   color: darken($brand-primary, 40%);
+//   // }
+
+//   // .form-control::-webkit-input-placeholder {
+//   //   color: darken($brand-primary, 40%);
+//   // }
+
+//   @extend .form-control;
+// }
+
+.c-form--primary {
+  display: inline-block;
+  width: $input-width;
+  max-width: 100%;
+  // height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: 1rem;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: lighten($brand-primary, 50%);
+  background-color: $brand-primary;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid darken($brand-primary, 10%);
+  border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  margin: 1rem 0;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  @include form-control-focus;
+
+  // Placeholder
+  @include placeholder (darken($brand-primary, 12%));
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $input-bg-disabled;
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .btn-primary {
+    background-color: $brand-secondary;
+    // border-color: $brand-secondary;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($brand-secondary, 20%);
+      // border-color: lighten($brand-secondary, 20%);
+      border: none;
+    }
+  }
+
+  @media  (max-width: $screen-sm-min) {
+    width: 100%;
+  }
+}
+
+select {
+  height: $line-height-computed + 2rem;
+  border: 1px solid black;
+}
+
+input[type="submit"] {
+  width: auto;
+}
+
+
+.c-form__address__state {
+  width: ($input-width - $input-space)/2;
+
+  @media  (max-width: $screen-sm-min) {
+    width: 49.5%;
+    float: left;
+  }
+
+}
+
+.c-form__address__zip {
+  width: ($input-width - $input-space)/2;
+
+  @media  (max-width: $screen-sm-min) {
+    margin-left: 1%;
+    width: 49.5%;
+  }
 }

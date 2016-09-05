@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bannerless
 ---
 <article class="c-release">
 
@@ -16,5 +16,15 @@ layout: default
 	{{ content }}
 
 	<p class="c-release__date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+
+  {% if page.media-contact %}
+  <p>
+    Media contact:
+    {{ page.media-contact.name }}
+    <a class="c-text--lining-numbers" href="tel:{{ page.media-contact.phone }}">{{ page.media-contact.phone }}</a>
+    <a href="mailto:{{ page.media-contact.email }}">{{ page.media-contact.email }}</a>
+  </p>{% endif %}
+
+  {% if page.cta %}<a href="{{ page.cta.link }}" class="btn btn-primary">{{ page.cta.label }}</a>{% endif %}
 
 </article>
