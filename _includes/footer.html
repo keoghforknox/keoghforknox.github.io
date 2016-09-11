@@ -16,7 +16,7 @@
 </div>
 
 <div class="c-footer__disclaimer">
-  <span>{{ site.authorisation }}.</span>
+  <span>{{ site.authorisation | append: '.' }}</span>
   <span>© {{ site.candidate }} {{ site.time | date: '%Y' }}.</span>
   <span><a href="/imprint">Imprint</a>.</span>
 </div>
