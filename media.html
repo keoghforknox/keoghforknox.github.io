@@ -3,23 +3,19 @@ layout: page
 title: Media
 permalink: /media/
 ---
+<h2>Media Releases</h2>
 
-<div class="home">
+<ul class="c-release__list">
+  {% for release in site.releases %}
+    <li>
+      <h3>
+        <a class="c-release__link" href="{{ release.url | prepend: site.baseurl }}">
+          <small class="c-release__meta">{{ release.date | date: "%b %-d, %Y" }}</small>
+          {{ release.title }}
+        </a>
+      </h3>
+    </li>
+  {% endfor %}
+</ul>
 
-  <h1 class="page-heading">Media Releases</h1>
-
-  <ul class="post-list">
-    {% for release in site.releases %}
-      <li>
-        <span class="post-meta">{{ release.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ release.url | prepend: site.baseurl }}">{{ release.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

@@ -2,3 +2,20 @@
   font-size: 110%;
   font-weight: bold;
 }
+
+.c-release__list {
+  list-style: none;
+  margin-bottom: 2em;
+  padding-left: 0;
+
+  .c-release__meta {
+    // @extend .text-muted;
+    color: inherit;
+    display: block;
+    text-decoration: none;
+  }
+
+  .c-release__link {
+    // text-decoration: none;
+  }
+}

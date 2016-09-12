@@ -35,6 +35,20 @@
   }
 }
 
+.c-banner__small {
+  background-image: url('/images/banner-small.jpg');
+  min-height: 0;
+
+  .c-banner__text {
+    margin: 2em 0;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
+
 .c-banner__tagline {
   font-style: italic;
 }

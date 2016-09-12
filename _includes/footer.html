@@ -1,24 +1,23 @@
-<div class="c-footer__signup">
-  {% unless page.petition %}
-  <h2>Get updates from Jake:</h2>
-  {% include mailchimp-generic.html inputclass='c-form--primary' %}
-  {% else %}
-  <h2>Sign the petition:</h2>
-  {% include petitions/mailchimp-{{ page.petition }}.html inputclass='c-form--primary' %}
-  {% endunless %}
-</div>
-
 <footer class="c-footer">
-<div class="c-footer__social-links">
-  {% for link in site.data.social-media %}
-  {% if link.enabled == true %}<a href="{{ link.url }}" title="{{ link.name }} ({{ link.title }})"><i class="{{ link.icon-class }}"></i></a>{% endif %}
-  {% endfor %}
-</div>
+  <div class="c-footer__signup">
+    {% unless page.petition %}
+    <h2>Get updates from Jake:</h2>
+    {% include mailchimp-generic.html inputclass='c-form--primary' %}
+    {% else %}
+    <h2>Sign the petition:</h2>
+    {% include petitions/mailchimp-{{ page.petition }}.html inputclass='c-form--primary' %}
+    {% endunless %}
+  </div>
 
-<div class="c-footer__disclaimer">
-  <span>{{ site.authorisation | append: '.' }}</span>
-  <span>© {{ site.candidate }} {{ site.time | date: '%Y' }}.</span>
-  <span><a href="/imprint">Imprint</a>.</span>
-</div>
+  <div class="c-footer__social-links">
+    {% for link in site.data.social-media %}
+    {% if link.enabled == true %}<a href="{{ link.url }}" title="{{ link.name }} ({{ link.title }})"><i class="{{ link.icon-class }}"></i></a>{% endif %}
+    {% endfor %}
+  </div>
 
+  <div class="c-footer__disclaimer">
+    <span>{{ site.authorisation | append: '.' }}</span>
+    <span>© {{ site.candidate }} {{ site.time | date: '%Y' }}.</span>
+    <span><a href="/imprint">Imprint</a>.</span>
+  </div>
 </footer>

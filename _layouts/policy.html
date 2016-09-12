@@ -1,13 +1,15 @@
 ---
 layout: bannerless
 ---
-<article class="c-policy">
+<main>
+  <article class="c-policy">
 
-	<h1 class="c-policy__title">{{ page.title }}</h1>
-  {% if page.headline %}<h2 class="c-policy__headline" itemprop="name headline">{{ page.headline }}</h2>{% endif %}
+    <h1 class="c-policy__title">{{ page.title }}</h1>
+    {% if page.headline %}<h2 class="c-policy__headline" itemprop="name headline">{{ page.headline }}</h2>{% endif %}
 
-	{{ content }}
+    {{ content }}
 
-	<p class="c-policy__date text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></p>
+    <p class="c-policy__date text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></p>
 
-</article>
+  </article>
+</main>
