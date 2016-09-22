@@ -21,6 +21,9 @@ $disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed
   text-align: center;
 
   a {
+    @media print {
+      display: none;
+    }
     color: inherit;
     text-decoration: underline;
   }
@@ -31,6 +34,9 @@ $disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed
 }
 
 .c-footer__social-links {
+  @media print {
+    display: none;
+  }
   background-color: $brand-primary;
   color: white;
   font-size: 200%;
@@ -39,12 +45,28 @@ $disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed
 
   a {
     color: white;
+    display: inline;
     margin: 0 .2em;
+  }
+
+  svg {
+    display: inline;
+    fill: white;
+    max-width: 2 * $font-size-base;
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: lighten($brand-primary, 45%)
+    }
   }
 }
 
 
 .c-footer__signup {
+  @media print {
+    display: none;
+  }
   background-color: $brand-primary;
   color: lighten($brand-primary, 50%);
   padding: 1rem;
@@ -85,4 +107,16 @@ $disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed
   // .form-control::-webkit-input-placeholder {
   //   color: lighten($brand-primary, 40%);
   // }
+}
+
+.c-footer__social-icon {
+  max-height: 2rem;
+
+  .c-svg {
+    fill: white;
+  }
+}
+
+.c-svg {
+  fill: white;
 }

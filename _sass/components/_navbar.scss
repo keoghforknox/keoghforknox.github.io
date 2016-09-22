@@ -8,7 +8,6 @@
 }
 
 .navbar-toggle {
-  @include navbar-vertical-align(3.5rem);
   @include navbar-vertical-align(4rem);
   border: 0;
   line-height: 0;
@@ -19,4 +18,15 @@
     height: 4rem;
   }
 }
+
+.navbar {
+  @media print {
+    display: block;
+    padding: 0;
+
+    nav,
+    .nav {
+      display: none;
+    }
+  }
 }

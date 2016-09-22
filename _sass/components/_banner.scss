@@ -3,6 +3,10 @@
 // ==========================================================================
 
 .c-banner {
+  @media print {
+    padding: 0 15px;
+  }
+
   background-color: #727a83;
   background-image: url('/images/banner.jpg');
   background-position: top;
