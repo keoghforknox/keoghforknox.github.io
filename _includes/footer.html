@@ -11,7 +11,7 @@
 
   <div class="c-footer__social-links">
     {% for link in site.data.social-media %}
-    {% if link.enabled == true %}<a href="{{ link.url }}" title="{{ link.name }} ({{ link.title }})"><i class="{{ link.icon-class }}"></i></a>{% endif %}
+    {% if link.enabled == true %}<a href="{{ link.url }}" title="{{ link.name }} ({{ link.title }})">{% include {{ link.icon-svg }} %}</a>{% endif %}
     {% endfor %}
   </div>
 

@@ -19,6 +19,9 @@ sass:
 google-fonts:
   url: http://fonts.google.com/
   title: 'Google Fonts'
+entypo:
+  url: http://www.entypo.com
+  title: 'Entypo'
 bootstrap:
   url: http://getbootstrap.com/
   title: 'Bootstrap'
