@@ -1,0 +1,108 @@
+.c-htv-page {
+  // column-width: 35rem;
+}
+
+.c-htv-instructions {
+  @media (min-width: 60rem) {
+    float: left;
+    max-width: 50%
+  }
+  background-color: $brand-primary;
+  color: white;
+  display: inline-block;
+  margin-top: 5rem;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.c-htv__wrapper {
+  @media (min-width: 60rem) {
+    float: right;
+    padding-left: 4rem;
+    width: 50%;
+  }
+
+  h2 {
+    font-weight: 700;
+    max-width: 35rem;
+    text-align: center;
+  }
+}
+
+.c-htv {
+  background-color: white;
+  border: 2px solid black;
+  border-top-width: 10px;
+  color: black;
+  font-family: 'Verdana', sans-serif;
+  max-width: 35rem;
+  min-height: 50rem;
+}
+
+.c-htv__dressing {
+  @media print {
+
+  }
+  margin: 0 1rem;
+
+  span.bold {
+    font-weight: bold;
+  }
+}
+
+.c-htv__dressing__l1 {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+
+.c-htv__dressing__l2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.c-htv__dressing__l3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c-htv__dressing__l4 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0.7rem 0 1rem;
+}
+
+.c-htv__dressing__l5 {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.c-htv__dressing__l6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.c-htv__candidate {
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.c-htv__ballot-box {
+  border: 2px solid black;
+  display: inline-block;
+  min-height: 3rem;
+  min-width: 3rem;
+  padding: 0.2rem 0;
+  text-align: center;
+}
+
+.c-htv__disclaimer {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+
+}
