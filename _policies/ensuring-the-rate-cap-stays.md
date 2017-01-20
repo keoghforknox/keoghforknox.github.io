@@ -1,8 +1,9 @@
 ---
 title: Ensuring the rate cap stays
-date: '2016-09-12 23:39:00'
+date: 2016-09-12 23:39:00 Z
 layout: policy
 ---
+
 Over the past 12 years rates have increased on average 50.5% for Knox Council residents. That equates to an average of a 4.2% per year. Increases have steeply risen in recent years: to 17.2% over 2010-2011 and 23% over 2013-2014.
 
 During 2013-14 did your wage increase by 23%? Or during 2010-2011 did you feel as if the council services increased by 17.2%? So why are our rate increases so dramatically above what we earn and below what we get?

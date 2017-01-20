@@ -1,7 +1,8 @@
 ---
-layout: index
 title: Jake Keogh for Knox
+layout: index
 ---
+
 Our wonderful local community is growing and appropriate development in the area is crucial for our community to continue to thrive. Inflated house prices and a shortage of properties are forcing our younger generation further away from their families and from the opportunity to live locally. We need to take action to ensure that the people of Knox have access to affordable housing and have the opportunity to live in this great area. We must strive to ensure that vibrancy and the beauty of the foothills is preserved for generations to come.
 
 I believe strongly in the need for fair rates for all residents. I will work closely with the ratepayers association of Knox to protect the current cap on rate increases and to ensure that ratepayers are consulted before there are any proposed changes in the future.

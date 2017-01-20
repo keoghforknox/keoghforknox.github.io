@@ -1,53 +1,49 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Jake Keogh for Knox
-shorttitle: Jake Keogh
-description: > # this means to ignore newlines until "baseurl:"
-  The official website for Jake Keogh for Knox, candidate for Dobson Ward
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jakekeogh.com" # the base hostname & protocol for your site
-repository: keoghforknox/keoghforknox.github.io
-
-google-analytics: UA-81725763-1
-
-candidate: Jake Keogh
-party:
-division: Knox
-authorisation: "Authorised by R Fransen, 4 Rollings Rd, Upper Ferntree Gully 3156"
-
-contact:
-  email: '&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#097;&#107;&#101;&#107;&#101;&#111;&#103;&#104;&#046;&#099;&#111;&#109;'
-  mobile: '0458 525 393'
-
+timezone: UTC
 collections:
-  releases:
-    output: true
-    permalink: /media/release/:name:output_ext
   policies:
+    title: Policies
     output: true
-    permalink: /policies/:name:output_ext
+    permalink: "/policies/:name:output_ext"
+  posts:
+    title: Posts
+    output: true
+  releases:
+    title: Releases
+    output: true
+    permalink: "/media/release/:name:output_ext"
+  uploads:
+    title: Uploads
+    output: true
+shorttitle: Jake Keogh
+description: 'The official website for Jake Keogh for Knox, candidate for Dobson Ward
 
+'
+baseurl: ''
+url: http://jakekeogh.com
+repository: keoghforknox/keoghforknox.github.io
+google-analytics: UA-81725763-1
+candidate: Jake Keogh
+party: 
+division: Knox
+authorisation: Authorised by R Fransen, 4 Rollings Rd, Upper Ferntree Gully 3156
+contact:
+  email: "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#097;&#107;&#101;&#107;&#101;&#111;&#103;&#104;&#046;&#099;&#111;&#109;"
+  mobile: 0458 525 393
 og:
   image:
     location: "/images/OpenGraph-201608291952.png"
     width: 2452
     height: 1287
   locale: en_GB
-
 colours:
-  primary: '#91255F'
-  secondary: '#60193F'
-
-favicon-version: '?v=2016083017727'
-
-
-# Build settings
+  primary: "#91255F"
+  secondary: "#60193F"
+favicon-version: "?v=2016083017727"
 markdown: kramdown
 sass_dir: _sass
-exclude: ['CNAME', 'Gemfile*', '*sublime-*']
+exclude:
+- CNAME
+- Gemfile*
+- "*sublime-*"
