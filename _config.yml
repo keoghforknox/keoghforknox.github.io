@@ -1,6 +1,6 @@
 ---
 title: Jake Keogh for Knox
-timezone: UTC
+timezone: Australia/Melbourne
 collections:
   policies:
     title: Policies
@@ -20,7 +20,7 @@ shorttitle: Jake Keogh
 description: 'The official website for Jake Keogh for Knox, candidate for Dobson Ward
 
 '
-baseurl: ''
+baseurl: 
 url: http://jakekeogh.com
 repository: keoghforknox/keoghforknox.github.io
 google-analytics: UA-81725763-1
